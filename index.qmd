@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+This is book with notes for all three courses in the Mathematics for Machine Learning Specialization from Coursera.
+
+
+Specializations has 3 courses:
+- Linear algebra.

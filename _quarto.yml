@@ -1,0 +1,25 @@
+project:
+  type: book
+
+book:
+  title: "Mathematics for Machine Learning - Course Notes"
+  author: "Bonnie Ashcroft"
+  date: "2024-12-09"
+  chapters:
+    - index.qmd
+    - part: linear-algebra.qmd
+      chapters: 
+        - module1.qmd
+        - module2.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

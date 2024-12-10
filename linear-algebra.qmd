@@ -1,0 +1,51 @@
+# Linear Algebra {.unnumbered}
+
+## Course Introduction
+
+[Coursera Materials](https://www.coursera.org/learn/machine-learning-linear-algebra/home/week/1)
+
+Instructor: Luis PhD in pure math.  Worked at Google, Apple and hosts a YouTube channel called Serrano Academy and author of Grokking Machine Learning.
+
+Expected learning outcomes: Identify matrices, determinent, row operations, vector to vector transformation, eigenvalues and eigenvectors.
+
+**Prerequisites**:
+Familiarity with basic algebra and solving an equation in 2 variables and how to plot y vs x. 
+
+Python coding experience (prerequisite)
+Labs and assignments are written in Python as Jupyter Notebooks
+
+- Data types (int, double, bool, string) and data structures (list, dict)
+- If/else, loops, functions
+- Importing libraries
+- Reading, editing, and debugging code, reading documentation
+
+[Python 3.13.0 documentation](https://docs.python.org/3/)
+
+[W3 Schools' Python Tutorial](https://www.w3schools.com/python/default.asp)
+ 
+### Notation 
+[Notation Reference](https://www.coursera.org/learn/machine-learning-linear-algebra/supplement/Lu7Of/notations)
+
+New notation: 
+
+- L1-norm of a vector: ∣v∣1
+- L2-norm of a vector: |v|2; |v|; ||v||
+
+### Downloading your Notebook
+In case you need to download your notebook for troubleshooting or running in your local environment, you can follow these simple steps:
+
+- From the Menu Bar of the notebook you are working on, click File → Save and Checkpoint to first save your progress.
+- Click File → Download as → Notebook (.ipynb). This should start downloading the file into your local machine.
+
+
+### Refreshing your Workspace
+This will come in handy whenever you need to start from scratch, fetch the latest version of the assignment, or you run into a 404 error.
+
+- Open the notebook from the classroom.
+- After the notebook opens up, click File → Open
+- When your workspace opens, tick the check box before your notebook file. After it is selected, press Shutdown. The icon beside the filename should turn from green to gray.
+- Tick the checkbox again and this time choose Rename and enter any filename other than the original. For example, C4W1_Assignment.ipynb (original) → C4W1_Assignment_v2.ipynb
+- (Optional) Tick the checkbox of any other file that you want to get a fresh copy of (e.g. dataset files that you might have manipulated irreversibly). Then click  Delete . You can also opt to Rename or Download each file individually in case you want to keep them before deleting.
+- Click on the Help button on the top right of the page.
+- Click the Get latest version button.
+- Click the Update Lab button. The page will refresh and you should now see the latest version of the notebook.

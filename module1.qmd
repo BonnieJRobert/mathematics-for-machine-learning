@@ -1,0 +1,138 @@
+# Module 1 {.unnumbered}
+
+#### Systems of Equations
+
+We will learn some applications of machine learning and use these concepts to emphazise the reasons behind why we are studying mathematics topics
+
+### System of Linear equations
+Linear regression is a supervised machine learning approach.  
+We use equations of the form: input + intput + input  = output. 
+Assume the relationship can be modelled by a line
+eg $$m*windspeed + b = power$$
+or $$ w_1x_1 + b = y$$
+where $b$ = bias, $w$ = weight, $y$ = target
+
+Out goal is to find w's and b.
+
+We can use a system of these equations: 
+$$ w_1x_1^{(1)} + w_2x_2^{(1)} +  ...  + w_nx_n^{(1)} + b = y^{(1)}$$
+$$ w_1x_1^{(2)} + w_2x_2^{(2)} +  ...  + w_nx_n^{(2)} + b = y^{(2)}$$
+
+                                        .
+                                        .
+                                        .                                
+$$ w_1x_1^{(m)} + w_2x_2^{(m)} +  ...  + w_nx_n^{(m)} + b = y^{(m)}$$
+
+We want to solve this system of linear equations for this model.
+
+features: wind speed, temperature, pressure, humidity, .... feature n 
+target: power output
+
+we can model this as $W^{T} \cdot X + b = \hat y$ like:
+
+$$(w_{1}  w_{2}  \cdots w_{n})
+\begin{bmatrix}
+   x_{1}^{(1)} & x_{2}^{(1)} & \cdots & x_{n}^{(1)} \\
+   x_{1}^{(2)} & x_{2}^{(2)} & \cdots & x_{n}^{(2)} \\
+   x_{1}^{(3)} & x_{2}^{(3)} & \cdots & x_{n}^{(3)} \\
+   \end{bmatrix} + b = (y^{(1)}  y^{(2)}  \cdots y^{(n)})$$
+
+We will start with systems of sentances, turn these into systems of equations
+
+### Systems of sentances
+The goal is to obtain as much info in one system as possible.
+Complete System: contains as many peices of information as sentances
+Redundant System: the sentences repeat themselves
+Contradictory System: the sentances contradict each other
+
+Non-singular: complete
+Singular: redundant or contradictory
+
+### System of Linear Equations
+Non-singular + complete => unique soln
+Singular + contradictory => no soln
+Singular + redundant => infinite soln
+
+Linear equations: only allowed scalars and numbers.  You can multiply variables by scalars, add and subtract.
+Non Linear: take powers, logarithms, functions of a variables.
+
+### System of eqnts as lines and planes.
+
+Linear equation in 2 variables:
+
+- A line in a plane.  
+- Slope is the ratio of rise/run. Y-intercept is where the line crosses the y-axis. 
+- Each point in a line is a soln to the equation.  Adding another equation is like adding another line.  Where the lines cross, is a unique solution to the two equations.  If there is a soln, the two lines are on the same plane. 
+   - unique soln (lines intersect) => complete, non-singular
+   - No soln (parallel lines) => contradictory and singular
+   - Infinite solns (identical line) => redundant and singular
+
+Linear equation in 3 variables:
+
+- A plane
+- Each point is a point in a plane.  
+  - unique soln (planes intersect).
+  - Infinite solns (all planes are the same) or (planes intersect at a line)
+
+### A geometric notion of singularity
+
+Set y to 0 for all equations.  Then the point (0,0) is a solution to all systems. Contradictory systems remain singular but now have infinitly many solns.  T
+The other systems remain of the same definition.
+
+### Singular vs Non-singular matrices
+
+Take the coefficients of systems into a matrix.  Leave out the constant y values.
+Matrices can be singular or non-singular, corresponding to the system.
+
+Collapse the matrix to find solutions to the system.  If we find infinite soln, the matrx is singular.  ow it is non-singlular.
+
+System of 2 equations:
+
+- Linear dependence: Second row is a multiple of the first one.
+- Linear independence: Second row is a not a multiple of the first one. No constant that I can multiple 1 to get 2.
+
+System of 3+ equations:
+
+- Linear dependence:  a row is the sum of two others, or a multiple of a sum => rows are linearly dependent => singular
+- Linear independence: row is a not a multiple or sum of two others. This is not easy to eye-ball => non-singular
+
+
+### The determinent
+Linear Independence: Rows are linearly dependent if one is a multiple of another.  That is, if you can multiple all values of x by some integer, a and get the values of another row. Rows are linearly independent if they are not lineraly dependent.
+
+A Non-singular matrix is one that contains lineraly independent rows. 
+A Singular matrix is one that contains lineraly dependent rows.
+
+If a matrix has entries a, b, c, and d, then the matrix is singular if there exists a number k for which the first row times k is equal to the second row.  
+Equivelent to ad-bc=0.  The determinent is ad-bc.
+ad is the product of the numbers in the main diagonal and bc is the product of the numbers in the antidiagonal.
+
+A Non-singular matrix has non-zero determinent.
+A Singular matrix has zero determinent.
+
+nxn matrix - we create more diagnols.
+
+If every entry under the main diagnol is 0, the determinent is the product of the main diagnol.
+
+### Check your knowledge - Week 1
+
+1.
+$$ 4a + 3o = 700 $$
+$$ 2a + 6o = 1000 $$
+
+2.
+$$\begin{bmatrix}
+   5 & 3 & 5 \\
+   7 & 2 & 8 \\
+   4 & & 3 \\
+   \end{bmatrix}
+   \begin{bmatrix}
+   x_{1}\\
+   x_{2}\\
+   x_{3}\\
+   \end{bmatrix}=
+   \begin{bmatrix}
+   6\\
+   17\\
+   8\\
+   \end{bmatrix}$$
